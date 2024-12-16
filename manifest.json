@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Link Saver Extension || Auto Open Links",
+  "version": "1.0.0",
+  "description": "An extension to save, manage, and open your favorite links on Chrome startup.",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.jpg",
+      "48": "icons/icon-48.jpg",
+      "128": "icons/icon-128.jpg"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.jpg",
+    "48": "icons/icon-48.jpg",
+    "128": "icons/icon-128.jpg"
+  },
+  "content_scripts": [],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
